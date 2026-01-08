@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Github,
@@ -17,7 +16,7 @@ const Contact = () => {
       url: "https://www.linkedin.com/in/rose-atieno-odhiambo-5038b420a",
       description: "Connect with me professionally",
       color: "text-blue-600",
-      bgColor: "bg-gradient-to-br from-blue-500/20 to-blue-600/30",
+      bgColor: "bg-linear-to-br from-blue-500/20 to-blue-600/30",
       hoverColor: "hover:from-blue-500/30 hover:to-blue-600/40",
     },
     {
@@ -26,7 +25,7 @@ const Contact = () => {
       url: "https://github.com/Rose1845",
       description: "Check out my code repositories",
       color: "text-gray-800",
-      bgColor: "bg-gradient-to-br from-gray-700/20 to-gray-800/30",
+      bgColor: "bg-linear-to-br from-gray-700/20 to-gray-800/30",
       hoverColor: "hover:from-gray-700/30 hover:to-gray-800/40",
     },
     {
@@ -35,7 +34,7 @@ const Contact = () => {
       url: "https://x.com/@nyaugenya001",
       description: "Follow me for tech insights",
       color: "text-black",
-      bgColor: "bg-gradient-to-br from-gray-800/20 to-black/30",
+      bgColor: "bg-linear-to-br from-gray-800/20 to-black/30",
       hoverColor: "hover:from-gray-800/30 hover:to-black/40",
     },
   ];
@@ -43,7 +42,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
       {/* Background with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5" />
+      <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-background to-secondary/5" />
 
       {/* Animated background elements */}
       <div className="absolute inset-0">
@@ -73,10 +72,10 @@ const Contact = () => {
                 className="group relative overflow-hidden border-0 bg-white/10 backdrop-blur-md shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 cursor-pointer"
               >
                 {/* Glassmorphism overlay */}
-                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm" />
+                <div className="absolute inset-0 bg-linear-to-br from-white/20 to-white/5 backdrop-blur-sm" />
 
                 {/* Animated border */}
-                <div className="absolute inset-0 bg-gradient-to-r from-primary/30 via-secondary/30 to-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-[1px] rounded-lg">
+                <div className="absolute inset-0 bg-linear-to-r from-primary/30 via-secondary/30 to-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-px rounded-lg">
                   <div className="w-full h-full bg-white/10 backdrop-blur-md rounded-lg" />
                 </div>
 
@@ -114,8 +113,8 @@ const Contact = () => {
                   </a>
 
                   {/* Decorative elements */}
-                  <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute bottom-4 left-4 w-6 h-6 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute top-4 right-4 w-8 h-8 bg-linear-to-br from-primary/20 to-secondary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute bottom-4 left-4 w-6 h-6 bg-linear-to-br from-secondary/20 to-primary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                 </CardContent>
               </Card>
             );

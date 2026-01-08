@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Calendar, MapPin, Layers } from 'lucide-react';
 
 interface System {
@@ -114,7 +113,7 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 relative overflow-hidden">
       {/* Background with gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/30 via-background to-primary/5" />
+      <div className="absolute inset-0 bg-linear-to-br from-accent/30 via-background to-primary/5" />
       
       {/* Animated background elements */}
       <div className="absolute inset-0">
@@ -133,7 +132,7 @@ const Experience = () => {
         {/* Timeline */}
         <div className="max-w-4xl mx-auto relative">
           {/* Main connecting line */}
-          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary" />
+          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary via-secondary to-primary" />
           
           {experiences.map((experience, index) => (
             <div key={index} className="relative pl-16 md:pl-20 pb-12 last:pb-0">
@@ -143,7 +142,7 @@ const Experience = () => {
               </div>
               
               {/* Connecting stick to content */}
-              <div className="absolute left-9 md:left-11 top-2 w-6 md:w-8 h-0.5 bg-gradient-to-r from-primary to-primary/30" />
+              <div className="absolute left-9 md:left-11 top-2 w-6 md:w-8 h-0.5 bg-linear-to-r from-primary to-primary/30" />
               
               {/* Company Header */}
               <div className="bg-card/50 backdrop-blur-md border border-border/50 rounded-xl p-6 hover:border-primary/50 transition-all duration-500 hover:shadow-xl hover:shadow-primary/10">
@@ -172,7 +171,7 @@ const Experience = () => {
                   
                   <div className="relative ml-2">
                     {/* Systems connecting line */}
-                    <div className="absolute left-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/50 to-transparent" />
+                    <div className="absolute left-2 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary/50 to-transparent" />
                     
                     {experience.systems.map((system, sysIndex) => (
                       <div key={sysIndex} className="relative pl-8 pb-4 last:pb-0">

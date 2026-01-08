@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { ExternalLink, Github, Code, Calendar, Users } from 'lucide-react';
 
 interface Project {
@@ -65,7 +64,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 relative overflow-hidden">
       {/* Animated background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/10" />
+      <div className="absolute inset-0 bg-linear-to-br from-primary/5 via-background to-accent/10" />
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
 
@@ -97,7 +96,7 @@ const Projects = () => {
         {/* Timeline Layout */}
         <div className="max-w-4xl mx-auto relative">
           {/* Main connecting line */}
-          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary" />
+          <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-primary via-secondary to-primary" />
           
           {projects.map((project, index) => (
             <div 
@@ -113,7 +112,7 @@ const Projects = () => {
               
               {/* Connecting stick/branch */}
               <div 
-                className={`absolute top-8 h-0.5 bg-gradient-to-r ${
+                className={`absolute top-8 h-0.5 bg-linear-to-r ${
                   index % 2 === 0 
                     ? 'left-10 md:left-1/2 md:ml-2 w-8 md:w-12 from-primary to-primary/30' 
                     : 'left-10 md:right-1/2 md:left-auto md:mr-2 w-8 md:w-12 from-primary/30 to-primary'
@@ -127,14 +126,13 @@ const Projects = () => {
                 }`}
               >
                 <div className="group relative overflow-hidden bg-card/50 backdrop-blur-md border border-border/50 rounded-xl p-6 hover:border-primary/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
-                  {/* Project Image */}
                   <div className="relative h-40 mb-4 rounded-lg overflow-hidden">
                     <img 
                       src={project.image} 
                       alt={project.title} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                    <div className="absolute inset-0 bg-linear-to-t from-background/80 to-transparent" />
                     
                     {/* Floating action buttons */}
                     <div className="absolute top-3 right-3 flex gap-2 opacity-0 group-hover:opacity-100 transition-all duration-300">

@@ -1,5 +1,4 @@
 
-import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Download, ArrowDown, Code, Coffee, Zap } from 'lucide-react';
 
@@ -36,23 +35,23 @@ const Hero = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center pt-16 bg-gradient-to-br from-background to-accent/30">
+    <section className="min-h-screen flex items-center pt-16 bg-linear-to-br from-background to-accent/30">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
-            <p className="text-primary font-medium mb-3 animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>Hello, I'm</p>
-            <h1 className="text-4xl md:text-6xl font-serif font-bold text-secondary mb-4 animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+            <p className="text-primary font-medium mb-3 animate-fade-in opacity-75" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>Hello, I'm</p>
+            <h1 className="text-4xl md:text-6xl font-serif font-bold text-secondary mb-4 animate-fade-in opacity-75" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
               Rose Atieno Odhiambo
             </h1>
-            <h2 className="text-xl md:text-2xl text-muted-foreground mb-6 animate-fade-in opacity-0" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+            <h2 className="text-xl md:text-2xl text-muted-foreground mb-6 animate-fade-in opacity-75" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
               Software Engineer
             </h2>
-            <p className="text-foreground/80 mb-8 max-w-lg animate-fade-in opacity-0" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
+            <p className="text-foreground/80 mb-8 max-w-lg animate-fade-in opacity-75" style={{ animationDelay: '0.8s', animationFillMode: 'forwards' }}>
               I create elegant, high-performance applications with Spring Boot, React, Angular, and more.
               Currently working with financial systems and passionate about building scalable and maintainable software solutions.
             </p>
-            <div className="flex flex-wrap gap-4 animate-fade-in opacity-0" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
-              <a href="/RoseAtienoOdhiambo_CV.pdf" download className="btn-primary flex items-center gap-2">
+            <div className="flex flex-wrap gap-4 animate-fade-in opacity-75" style={{ animationDelay: '1s', animationFillMode: 'forwards' }}>
+              <a href="" download className="btn-primary flex items-center gap-2">
                 <Download size={18} />
                 Download CV
               </a>
@@ -70,11 +69,11 @@ const Hero = () => {
           <div className="order-1 lg:order-2 flex justify-center">
             <div className="relative w-full max-w-md">
               {/* Dashboard Container */}
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-2xl animate-fade-in opacity-75" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
                 {/* Dashboard Header */}
                 <div className="text-center mb-6">
                   <h3 className="text-xl font-bold text-secondary mb-2">Tech Stack</h3>
-                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+                  <div className="w-16 h-1 bg-linear-to-r from-primary to-secondary mx-auto rounded-full"></div>
                 </div>
 
                 {/* Tech Cards */}
@@ -84,7 +83,7 @@ const Hero = () => {
                     return (
                       <div 
                         key={tech.name}
-                        className="group relative overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 p-4 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 animate-fade-in opacity-0"
+                        className="group relative overflow-hidden rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 p-4 hover:bg-white/20 transition-all duration-300 hover:-translate-y-1 animate-fade-in opacity-75"
                         style={{ animationDelay: `${0.4 + index * 0.2}s`, animationFillMode: 'forwards' }}
                       >
                         {/* Tech Card Content */}
@@ -104,7 +103,7 @@ const Hero = () => {
                         </div>
 
                         {/* Animated Border */}
-                        <div className={`absolute inset-0 bg-gradient-to-r ${tech.color} opacity-0 group-hover:opacity-20 transition-opacity duration-300 rounded-xl`} />
+                        <div className={`absolute inset-0 bg-linear-to-r ${tech.color} opacity-75 group-hover:opacity-20 transition-opacity duration-300 rounded-xl`} />
                       </div>
                     );
                   })}

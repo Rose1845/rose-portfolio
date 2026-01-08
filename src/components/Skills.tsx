@@ -140,7 +140,7 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-accent/30 via-background to-primary/5" />
+      <div className="absolute inset-0 bg-linear-to-br from-accent/30 via-background to-primary/5" />
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 left-10 w-80 h-80 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s' }} />
 
@@ -183,16 +183,16 @@ const Skills = () => {
               return (
                 <Card key={index} className="group relative overflow-hidden bg-white/10 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
                   {/* Glassmorphism overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm" />
+                  <div className="absolute inset-0 bg-linear-to-br from-white/20 to-white/5 backdrop-blur-sm" />
                   
                   {/* Animated border */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/30 via-secondary/30 to-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-[1px] rounded-lg">
+                  <div className="absolute inset-0 bg-linear-to-r from-primary/30 via-secondary/30 to-primary/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-px rounded-lg">
                     <div className="w-full h-full bg-white/10 backdrop-blur-md rounded-lg" />
                   </div>
 
                   <CardContent className="relative p-6 z-10">
                     {/* Category Header */}
-                    <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${category.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`w-12 h-12 rounded-xl bg-linear-to-br ${category.gradient} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                       <IconComponent className={`${category.color} h-6 w-6`} />
                     </div>
                     
@@ -209,7 +209,7 @@ const Skills = () => {
                           </div>
                           <div className="h-1.5 bg-white/20 rounded-full overflow-hidden">
                             <div 
-                              className="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out"
+                              className="h-full bg-linear-to-r from-primary to-secondary rounded-full transition-all duration-1000 ease-out"
                               style={{ 
                                 width: animatedSkills ? `${skill.level}%` : '0%',
                                 transitionDelay: `${skillIndex * 100}ms`
@@ -230,7 +230,7 @@ const Skills = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {filteredSkills.map((skill, index) => (
                 <Card key={index} className="group relative overflow-hidden bg-white/10 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-1">
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-white/5 backdrop-blur-sm" />
+                  <div className="absolute inset-0 bg-linear-to-br from-white/20 to-white/5 backdrop-blur-sm" />
                   
                   <CardContent className="relative p-6 z-10">
                     <div className="flex items-center justify-between mb-4">
@@ -242,13 +242,13 @@ const Skills = () => {
                     {/* Large Skill Bar */}
                     <div className="h-3 bg-white/20 rounded-full overflow-hidden">
                       <div 
-                        className="h-full bg-gradient-to-r from-primary via-primary/80 to-secondary rounded-full transition-all duration-1000 ease-out relative"
+                        className="h-full bg-linear-to-r from-primary via-primary/80 to-secondary rounded-full transition-all duration-1000 ease-out relative"
                         style={{ 
                           width: animatedSkills ? `${skill.level}%` : '0%',
                           transitionDelay: `${index * 150}ms`
                         }}
                       >
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse" />
+                        <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/20 to-transparent animate-pulse" />
                       </div>
                     </div>
                     
